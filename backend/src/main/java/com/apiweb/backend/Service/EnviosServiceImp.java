@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.apiweb.backend.Exception.RecursoNoEncontradoException;
 import com.apiweb.backend.Model.EnviosModel;
@@ -11,6 +12,7 @@ import com.apiweb.backend.Model.OrdenesModel;
 import com.apiweb.backend.Repository.IEnviosRepository;
 import com.apiweb.backend.Repository.IOrdenesRepository;
 
+@Service 
 public class EnviosServiceImp implements IEnviosService {
     @Autowired IEnviosRepository enviosRepository;
     @Autowired IOrdenesRepository  ordenesRepository;
