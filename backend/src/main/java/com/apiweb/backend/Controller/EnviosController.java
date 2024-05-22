@@ -21,8 +21,7 @@ import com.apiweb.backend.Service.IEnviosService;
 @RequestMapping ("/apiweb/envios")
 
 public class EnviosController {
-    @Autowired
-    private IEnviosService enviosService;
+    @Autowired IEnviosService enviosService;
 
     @PostMapping ("/guardar")
     public ResponseEntity <String> guardarEnvio(@RequestBody EnviosModel envio){
