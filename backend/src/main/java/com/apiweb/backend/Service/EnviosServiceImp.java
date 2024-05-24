@@ -11,6 +11,7 @@ import com.apiweb.backend.Model.OrdenesModel;
 import com.apiweb.backend.Repository.IEnviosRepository;
 import com.apiweb.backend.Repository.IOrdenesRepository;
 
+@Service
 public class EnviosServiceImp implements IEnviosService {
     @Autowired IEnviosRepository enviosRepository;
     @Autowired IOrdenesRepository  ordenesRepository;
